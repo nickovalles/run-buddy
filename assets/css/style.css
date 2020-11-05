@@ -153,9 +153,6 @@ section {
 
 /* What We... */
 
-.intro {
-    text-align: center;
-}
 
 .intro p {
     line-height: 1.7;
@@ -163,20 +160,21 @@ section {
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .steps {
-    text-align: center;
     background: #fce138;
 }
 
 .section-title {
     font-size: 55px;
     color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
     border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
   
   .primary-border {
@@ -187,15 +185,6 @@ section {
     border-color: #39a6b2;
   }
 
-  /* remove this entire CSS rule */
-  .intro h2 {
-
-  }
-
-  /* and this one too */
-  .steps h2 {
-
-  }
 
   .steps div {
       margin-bottom: 60px;
@@ -227,7 +216,7 @@ section {
 /* Trainer Styling Start */
 
 .trainers {
-    text-align: center;
+
 }
 
 .trainer {
@@ -281,7 +270,6 @@ section {
 }
 
 .contact {
-    text-align: center;
     background: #024e76;
 }
 
@@ -321,6 +309,10 @@ section {
   
   /* REACH OUT STYLES END */
 
+/* Flexbox Styling */
 
+.flex-row {
+    display: flex;
+}
 
 
