@@ -352,17 +352,62 @@ section {
     justify-content: space-around;
 }
 
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 12;
+    transition: 0.5s;
+  }
+
 .trainer {
     margin: 20px;
-    background: #024e76;
-    color: #fce138;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     flex: 1;
 }
 
-.trainer img {
-    width: 100%;
-    overflow: auto;
+.trainer-1 {
+    background-image: url(../images/trainer-1.jpg);
+    position: relative;
 }
+
+.trainer-2 {
+    background-image: url(../images/trainer-2.jpg);
+    position: relative;
+}
+
+.trainer-3 {
+    background-image: url(../images/trainer-3.jpg);
+    position: relative;
+}
+
+.trainer-img {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.trainer-img h3 {
+    position: relative;
+    font-size: 28px;
+    z-index: 9998;
+    margin-bottom: 5px;
+  }
+  
+.trainer-img h4 {
+    position: relative;
+    font-size: 22px;
+    z-index: 9998;
+  }
 
 .trainer-bio {
     padding: 35px;
